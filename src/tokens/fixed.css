@@ -1,0 +1,17 @@
+/* =============================================================
+   FIXED TOKENS
+   Values that never change across breakpoints or themes.
+   ============================================================= */
+
+:root {
+  --fixed-fx-0: 2px;
+  --fixed-fx-1: 4px;
+  --fixed-fx-2: 8px;
+  --fixed-fx-3: 12px;
+  --fixed-fx-4: 16px;
+  --fixed-fx-5: 20px;
+  --fixed-fx-6: 24px;
+  --fixed-fx-7: 28px;
+  --fixed-fx-8: 32px;
+  --fixed-fx-9: 40px;
+}
