@@ -1,10 +1,7 @@
-/* =============================================================
-   TOKENS INDEX
-   Import this single file in your app entry point (main.jsx).
-   ============================================================= */
-
 @import '../src/fonts.css';
-@import '../src/tokens/theme.css';
+@import '../src/fonts-haas.css';
+@import '../src/tokens/theme-base.css';
+@import '../src/tokens/theme-bw.css';
 @import '../src/tokens/semantic.css';
 @import '../src/tokens/responsive.css';
 @import '../src/tokens/fixed.css';
