@@ -1,0 +1,175 @@
+/* ─────────────────────────────────────────────
+   Typography utility classes
+   Use var() tokens from the design token system
+   ───────────────────────────────────────────── */
+
+/* ── Titles ──────────────────────────────────
+   font-family: var(--theme-font-family-title)
+   font-weight: normal (400)
+   ─────────────────────────────────────────── */
+
+.type-title-07 {
+  font-family: var(--theme-font-family-title);
+  font-size: var(--typography-title-7-sz);
+  line-height: var(--typography-title-7-lh);
+  font-weight: normal;
+}
+
+.type-title-06 {
+  font-family: var(--theme-font-family-title);
+  font-size: var(--typography-title-6-sz);
+  line-height: var(--typography-title-6-lh);
+  font-weight: normal;
+}
+
+.type-title-05 {
+  font-family: var(--theme-font-family-title);
+  font-size: var(--typography-title-5-sz);
+  line-height: var(--typography-title-5-lh);
+  font-weight: normal;
+}
+
+.type-title-04 {
+  font-family: var(--theme-font-family-title);
+  font-size: var(--typography-title-4-sz);
+  line-height: var(--typography-title-4-lh);
+  font-weight: normal;
+}
+
+.type-title-03 {
+  font-family: var(--theme-font-family-title);
+  font-size: var(--typography-title-3-sz);
+  line-height: var(--typography-title-3-lh);
+  font-weight: normal;
+}
+
+.type-title-02 {
+  font-family: var(--theme-font-family-title);
+  font-size: var(--typography-title-2-sz);
+  line-height: var(--typography-title-2-lh);
+  font-weight: normal;
+}
+
+.type-title-01 {
+  font-family: var(--theme-font-family-title);
+  font-size: var(--typography-title-1-sz);
+  line-height: var(--typography-title-1-lh);
+  font-weight: normal;
+}
+
+/* ── Body ────────────────────────────────────
+   font-family: var(--theme-font-family-body)
+   font-weight: 500
+   ─────────────────────────────────────────── */
+
+.type-body-06 {
+  font-family: var(--theme-font-family-body);
+  font-size: var(--typography-body-6-sz);
+  line-height: var(--typography-body-6-lh);
+  font-weight: 400;
+}
+
+.type-body-05 {
+  font-family: var(--theme-font-family-body);
+  font-size: var(--typography-body-5-sz);
+  line-height: var(--typography-body-5-lh);
+  font-weight: 400;
+}
+
+.type-body-04 {
+  font-family: var(--theme-font-family-body);
+  font-size: var(--typography-body-4-sz);
+  line-height: var(--typography-body-4-lh);
+  font-weight: 400;
+}
+
+.type-body-03 {
+  font-family: var(--theme-font-family-body);
+  font-size: var(--typography-body-3-sz);
+  line-height: var(--typography-body-3-lh);
+  font-weight: 400;
+}
+
+.type-body-02 {
+  font-family: var(--theme-font-family-body);
+  font-size: var(--typography-body-2-sz);
+  line-height: var(--typography-body-2-lh);
+  font-weight: 400;
+}
+
+.type-body-01 {
+  font-family: var(--theme-font-family-body);
+  font-size: var(--typography-body-1-sz);
+  line-height: var(--typography-body-1-lh);
+  font-weight: 400;
+}
+
+/* ── Labels ──────────────────────────────────
+   font-family: var(--theme-font-family-label)
+   font-weight: 500
+   text-transform: uppercase
+   letter-spacing: var(--typography-letter-spacing-label)
+   ─────────────────────────────────────────── */
+
+.type-label-02 {
+  font-family: var(--theme-font-family-label);
+  font-size: var(--typography-label-2-sz);
+  line-height: var(--typography-label-2-lh);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--typography-letter-spacing-label);
+}
+
+.type-label-01 {
+  font-family: var(--theme-font-family-label);
+  font-size: var(--typography-label-1-sz);
+  line-height: var(--typography-label-1-lh);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--typography-letter-spacing-label);
+}
+
+/* ── CTA ─────────────────────────────────────
+   font-family: var(--theme-font-family-cta)
+   font-weight: 500
+   ─────────────────────────────────────────── */
+
+.type-cta-03 {
+  font-family: var(--theme-font-family-cta);
+  font-size: var(--typography-cta-3-sz);
+  line-height: var(--typography-cta-3-lh);
+  font-weight: 500;
+}
+
+.type-cta-02 {
+  font-family: var(--theme-font-family-cta);
+  font-size: var(--typography-cta-m-sz);
+  line-height: var(--typography-cta-m-lh);
+  font-weight: 500;
+}
+
+.type-cta-01 {
+  font-family: var(--theme-font-family-cta);
+  font-size: var(--typography-cta-1-sz);
+  line-height: var(--typography-cta-1-lh);
+  font-weight: 500;
+}
+
+/* ── CTA Link / Footer ───────────────────────
+   font-family: var(--theme-font-family-cta)
+   font-weight: normal (400)
+   ─────────────────────────────────────────── */
+
+.type-cta-link-02 {
+  font-family: var(--theme-font-family-cta);
+  font-size: var(--typography-cta-m-sz);
+  line-height: var(--typography-cta-m-lh);
+  font-weight: 400;
+}
+
+.type-cta-link-01 {
+  font-family: var(--theme-font-family-cta);
+  font-size: var(--typography-cta-1-sz);
+  line-height: var(--typography-cta-1-lh);
+  font-weight: 400;
+}

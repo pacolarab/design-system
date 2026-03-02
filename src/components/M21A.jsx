@@ -27,11 +27,13 @@ export default function M21A() {
     <section style={{
       backgroundColor: "var(--backgrounds-01)",
       borderTop: "1px solid var(--strokes-icons-04)",
-      display: "flex", alignItems: "flex-start", justifyContent: "space-between",
+      display: "grid",
+      gridTemplateColumns: "repeat(12, 1fr)",
+      columnGap: "var(--layout-grids-gutter)",
       padding: "var(--layout-spacers-12) var(--layout-grids-wrapper-default)",
       width: "100%", boxSizing: "border-box",
     }}>
-      <div style={{ display: "flex", flexDirection: "column", gap: "var(--layout-spacers-9)", width: "55%" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "var(--layout-spacers-9)", gridColumn: "1 / 7" }}>
         <h2 style={{
           color: "var(--texts-01)",
           fontFamily: "var(--theme-font-family-title)",
@@ -65,7 +67,7 @@ export default function M21A() {
         </div>
         <ActionButton text="Button" />
       </div>
-      <div style={{ position: "relative", height: "400px", width: "42%", flexShrink: 0 }}>
+      <div style={{ position: "relative", height: "400px", gridColumn: "8 / 13" }}>
         <img alt="Hero" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", borderRadius: "var(--layout-corners-s)" }} src={imgAspectRatio} />
         <button style={{
           position: "absolute", bottom: "24px", left: "24px",

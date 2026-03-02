@@ -3,5 +3,6 @@
 @import './semantic.css';
 @import './responsive.css';
 @import './fixed.css';
+@import './typography.css';
 @import '../fonts.css';
 @import '../fonts-haas.css';
