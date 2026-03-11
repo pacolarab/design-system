@@ -27,7 +27,7 @@ export default function CardHighlighted({
           <p className="type-label-02" style={{ textTransform: 'uppercase', color: 'var(--texts-01)' }}>
             {label}
           </p>
-          <p className="type-title-05" style={{ color: 'var(--texts-01)' }}>
+          <p className="type-title-05" style={{ color: 'var(--theme-color-grayscale-white)' }}>
             {price} <span className="type-title-01">{currency}</span>
           </p>
         </div>
