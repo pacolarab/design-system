@@ -18,7 +18,7 @@ export default {
   },
   decorators: [
     (Story) => (
-      <div style={{ width: 1440 }}>
+      <div style={{ width: "100%" }}>
         <Story />
       </div>
     ),

@@ -34,12 +34,12 @@ export default function M45TabContent({
   return (
     <section
       style={{
+        width: "100%",
         background: "var(--backgrounds-01)",
         padding: "72px var(--layout-grids-wrapper-default)",
         display: "flex",
         flexDirection: "column",
         boxSizing: "border-box",
-        width: "100%",
       }}
     >
       {/* Content */}
@@ -65,10 +65,9 @@ export default function M45TabContent({
               display: "grid",
               gridTemplateColumns: "repeat(12, 1fr)",
               gap: "var(--layout-grids-gutter)",
-              alignItems: "flex-start",
             }}
           >
-            {/* Title Fill — columnas 1 a 9 */}
+            {/* Title Fill — columnas 1 / 10 */}
             <div
               style={{
                 gridColumn: "1 / 10",
@@ -91,13 +90,13 @@ export default function M45TabContent({
               </p>
             </div>
 
-            {/* Right — última columna (12) */}
+            {/* Right — columna 12 / 13 */}
             <div
               style={{
                 gridColumn: "12 / 13",
+                justifySelf: "end",
+                alignSelf: "start",
                 paddingTop: "var(--layout-spacers-2)",
-                display: "flex",
-                justifyContent: "flex-end",
               }}
             >
               <button
@@ -129,7 +128,6 @@ export default function M45TabContent({
               borderBottom: "1px solid var(--strokes-icons-04)",
             }}
           >
-            {/* Item List */}
             <div
               style={{
                 display: "flex",
@@ -173,10 +171,10 @@ export default function M45TabContent({
             display: "grid",
             gridTemplateColumns: "repeat(12, 1fr)",
             gap: "var(--layout-grids-gutter)",
-            alignItems: "flex-start",
+            alignItems: "start",
           }}
         >
-          {/* LEFT — columnas 1 a 4 */}
+          {/* LEFT — columnas 1 / 5 */}
           <div
             style={{
               gridColumn: "1 / 5",
@@ -215,7 +213,6 @@ export default function M45TabContent({
                     {item}
                   </span>
 
-                  {/* Botón icono circular */}
                   <button
                     style={{
                       width: 48,
@@ -268,7 +265,7 @@ export default function M45TabContent({
             </div>
           </div>
 
-          {/* RIGHT — columnas 7 a 12 */}
+          {/* RIGHT — columnas 7 / 13 */}
           <div
             style={{
               gridColumn: "7 / 13",
@@ -292,13 +289,8 @@ export default function M45TabContent({
                   boxSizing: "border-box",
                 }}
               >
-                <span style={{ fontSize: 18, color: "var(--texts-01)" }}>
-                  ↻
-                </span>
-                <span
-                  className="type-body-03"
-                  style={{ color: "var(--texts-01)" }}
-                >
+                <span style={{ fontSize: 18, color: "var(--texts-01)" }}>↻</span>
+                <span className="type-body-03" style={{ color: "var(--texts-01)" }}>
                   Placeholder
                 </span>
               </div>
