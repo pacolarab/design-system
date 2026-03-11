@@ -59,22 +59,22 @@ export default function M45TabContent({
             overflow: "hidden",
           }}
         >
-          {/* 05-TITLE */}
+          {/* 05-TITLE — CSS Grid 12 columnas */}
           <div
             style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
+              display: "grid",
+              gridTemplateColumns: "repeat(12, 1fr)",
+              gap: "var(--layout-grids-gutter)",
               alignItems: "flex-start",
             }}
           >
-            {/* Title Fill */}
+            {/* Title Fill — columnas 1 a 9 */}
             <div
               style={{
+                gridColumn: "1 / 10",
                 display: "flex",
                 flexDirection: "column",
                 gap: "var(--layout-spacers-7)",
-                width: 644,
               }}
             >
               <h2
@@ -91,8 +91,15 @@ export default function M45TabContent({
               </p>
             </div>
 
-            {/* Right — botón XS primary */}
-            <div style={{ paddingTop: "var(--layout-spacers-2)" }}>
+            {/* Right — última columna (12) */}
+            <div
+              style={{
+                gridColumn: "12 / 13",
+                paddingTop: "var(--layout-spacers-2)",
+                display: "flex",
+                justifyContent: "flex-end",
+              }}
+            >
               <button
                 className="type-cta-01"
                 style={{
@@ -160,22 +167,22 @@ export default function M45TabContent({
           </div>
         </div>
 
-        {/* BOTTOM */}
+        {/* BOTTOM — CSS Grid 12 columnas */}
         <div
           style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
+            display: "grid",
+            gridTemplateColumns: "repeat(12, 1fr)",
+            gap: "var(--layout-grids-gutter)",
             alignItems: "flex-start",
           }}
         >
-          {/* LEFT */}
+          {/* LEFT — columnas 1 a 4 */}
           <div
             style={{
+              gridColumn: "1 / 5",
               display: "flex",
               flexDirection: "column",
               gap: "var(--layout-spacers-9)",
-              width: 421,
             }}
           >
             {/* Items list */}
@@ -261,10 +268,10 @@ export default function M45TabContent({
             </div>
           </div>
 
-          {/* RIGHT — placeholders */}
+          {/* RIGHT — columnas 7 a 12 */}
           <div
             style={{
-              width: 755,
+              gridColumn: "7 / 13",
               display: "flex",
               flexDirection: "column",
               gap: "var(--layout-spacers-6)",
