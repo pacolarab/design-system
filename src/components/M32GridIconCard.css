@@ -1,0 +1,102 @@
+.m32 {
+  background: var(--backgrounds-01);
+  padding: 72px var(--layout-grids-wrapper-default);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.m32__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--layout-spacers-11);
+  width: 100%;
+}
+
+.m32__header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--layout-grids-gutter);
+  align-items: end;
+}
+
+.m32__header-title {
+  grid-column: 1 / 7;
+  font-family: var(--tipography-font-family-title);
+  font-size: var(--typography-title-3-sz);
+  line-height: var(--typography-title-3-lh);
+  font-weight: 400;
+  color: var(--texts-01);
+  margin: 0;
+}
+
+.m32__header-subtitle {
+  grid-column: 7 / 13;
+  font-family: var(--tipography-font-family-body);
+  font-size: var(--typography-body-3-sz);
+  line-height: var(--typography-body-3-lh);
+  font-weight: 400;
+  color: var(--texts-02);
+  margin: 0;
+  padding-top: var(--layout-spacers-2);
+}
+
+.m32__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--layout-grids-gutter);
+  width: 100%;
+}
+
+.m32__card {
+  background: var(--fills-gray-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 264px;
+  padding: var(--layout-spacers-6);
+  border-radius: var(--layout-corners-s);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.m32__card-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--fills-gray-3, white);
+  border-radius: var(--layout-corners-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.m32__card-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.m32__card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--layout-spacers-2);
+  width: 100%;
+}
+
+.m32__card-label {
+  font-family: var(--tipography-font-family-body);
+  font-size: var(--typography-body-4-sz);
+  line-height: var(--typography-body-4-lh);
+  font-weight: 500;
+  color: var(--texts-01);
+  margin: 0;
+}
+
+.m32__card-description {
+  font-family: var(--tipography-font-family-body);
+  font-size: var(--typography-body-3-sz);
+  line-height: var(--typography-body-3-lh);
+  font-weight: 400;
+  color: var(--texts-02);
+  margin: 0;
+}
