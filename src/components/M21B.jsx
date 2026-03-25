@@ -1,5 +1,4 @@
 import "../tokens/index.css";
-import Button from "./Button";
 
 function Collage({ images }) {
   var top = images[0] || "";
@@ -112,7 +111,25 @@ export default function M21B({
         </div>
 
         <div style={{ alignSelf: "flex-start" }}>
-          <Button type="primary" size="S" label={ctaLabel} onClick={onCtaClick} />
+          <button
+            onClick={onCtaClick}
+            style={{
+              height: 40,
+              background: "var(--button-primary-default-fill)",
+              border: "1px solid var(--button-primary-default-stroke)",
+              borderRadius: "var(--layout-corners-s)",
+              color: "var(--button-primary-default-text)",
+              fontFamily: "var(--tipography-font-family-cta)",
+              fontSize: "var(--typography-cta-s-sz)",
+              fontWeight: 500,
+              paddingLeft: "var(--layout-button-xs-padding)",
+              paddingRight: "var(--layout-button-xs-padding)",
+              cursor: "pointer",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {ctaLabel}
+          </button>
         </div>
       </div>
 
