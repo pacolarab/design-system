@@ -1,7 +1,7 @@
 import IconButton from "./IconButton";
 
 export default {
-  title: "Components/IconButton",
+  title: "UI Components/IconButton",
   component: IconButton,
   parameters: {
     layout: "centered",

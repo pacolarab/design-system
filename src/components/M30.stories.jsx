@@ -3,7 +3,7 @@ import M30 from "./M30";
 const PLACEHOLDER = "https://picsum.photos/1312/738";
 
 export default {
-  title: "Components/M30",
+  title: "Modules/M30",
   component: M30,
   parameters: {
     layout: "fullscreen",

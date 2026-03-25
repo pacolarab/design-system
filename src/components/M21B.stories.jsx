@@ -7,7 +7,7 @@ const IMAGES = [
 ];
 
 export default {
-  title: "Components/M21B",
+  title: "Modules/M21B",
   component: M21B,
   parameters: {
     layout: "fullscreen",

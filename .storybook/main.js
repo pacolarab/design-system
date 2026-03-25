@@ -1,5 +1,3 @@
-
-
 /** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
   "stories": [
@@ -12,6 +10,11 @@ const config = {
     "@storybook/addon-a11y",
     "@storybook/addon-docs"
   ],
-  "framework": "@storybook/react-vite"
+  "framework": "@storybook/react-vite",
+  viteFinal: async (config) => {
+    config.optimizeDeps = config.optimizeDeps || {};
+    config.optimizeDeps.include = config.optimizeDeps.include || [];
+    return config;
+  },
 };
 export default config;

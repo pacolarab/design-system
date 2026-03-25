@@ -1,7 +1,7 @@
 import Tag from "./Tag";
 
 export default {
-  title: "Components/Tag",
+  title: "UI Components/Tag",
   component: Tag,
   parameters: {
     layout: "centered",

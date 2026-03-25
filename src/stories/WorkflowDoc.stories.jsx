@@ -54,7 +54,7 @@ function WorkflowDoc() {
 }
 
 export default {
-  title: "Documentation/Workflow",
+  title: "Read Me First/Workflow",
   parameters: { layout: "fullscreen" },
 };
 

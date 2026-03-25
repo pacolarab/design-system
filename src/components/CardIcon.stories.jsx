@@ -1,7 +1,7 @@
 import CardIcon from "./CardIcon";
 
 export default {
-  title: "Components/CardIcon",
+  title: "UI Components/CardIcon",
   component: CardIcon,
   parameters: {
     layout: "centered",

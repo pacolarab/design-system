@@ -6,7 +6,7 @@ import '../tokens/fixed.css';
 import M21A from "../components/M21A";
 
 export default {
-  title: "Components/M21A",
+  title: "Modules/M21A",
   component: M21A,
 };
 
