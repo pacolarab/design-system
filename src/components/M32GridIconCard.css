@@ -21,7 +21,7 @@
 
 .m32__header-title {
   grid-column: 1 / 7;
-  font-family: var(--tipography-font-family-title);
+  font-family: var(--theme-font-family-title);
   font-size: var(--typography-title-3-sz);
   line-height: var(--typography-title-3-lh);
   font-weight: 400;
@@ -31,7 +31,7 @@
 
 .m32__header-subtitle {
   grid-column: 7 / 13;
-  font-family: var(--tipography-font-family-body);
+  font-family: var(--theme-font-family-body);
   font-size: var(--typography-body-3-sz);
   line-height: var(--typography-body-3-lh);
   font-weight: 400;
@@ -84,7 +84,7 @@
 }
 
 .m32__card-label {
-  font-family: var(--tipography-font-family-body);
+  font-family: var(--theme-font-family-body);
   font-size: var(--typography-body-4-sz);
   line-height: var(--typography-body-4-lh);
   font-weight: 500;
@@ -93,7 +93,7 @@
 }
 
 .m32__card-description {
-  font-family: var(--tipography-font-family-body);
+  font-family: var(--theme-font-family-body);
   font-size: var(--typography-body-3-sz);
   line-height: var(--typography-body-3-lh);
   font-weight: 400;

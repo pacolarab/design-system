@@ -77,14 +77,26 @@ export default function M45TabContent({
               }}
             >
               <h2
-                className="type-title-03"
-                style={{ color: "var(--texts-01)", margin: 0 }}
+                style={{
+                  fontFamily: "var(--theme-font-family-title)",
+                  fontSize: "var(--typography-title-3-sz)",
+                  lineHeight: "var(--typography-title-3-lh)",
+                  fontWeight: 400,
+                  color: "var(--texts-01)",
+                  margin: 0,
+                }}
               >
                 {title}
               </h2>
               <p
-                className="type-body-03"
-                style={{ color: "var(--texts-02)", margin: 0 }}
+                style={{
+                  fontFamily: "var(--theme-font-family-body)",
+                  fontSize: "var(--typography-body-3-sz)",
+                  lineHeight: "var(--typography-body-3-lh)",
+                  fontWeight: 400,
+                  color: "var(--texts-02)",
+                  margin: 0,
+                }}
               >
                 {body}
               </p>
@@ -100,7 +112,6 @@ export default function M45TabContent({
               }}
             >
               <button
-                className="type-cta-01"
                 style={{
                   height: 40,
                   background: "var(--button-primary-default-fill)",
@@ -111,6 +122,10 @@ export default function M45TabContent({
                   paddingRight: "var(--layout-button-xs-padding)",
                   cursor: "pointer",
                   whiteSpace: "nowrap",
+                  fontFamily: "var(--theme-font-family-cta)",
+                  fontSize: "var(--typography-cta-1-sz)",
+                  lineHeight: "var(--typography-cta-1-lh)",
+                  fontWeight: 500,
                 }}
               >
                 {buttonText}
@@ -139,8 +154,11 @@ export default function M45TabContent({
                 <button
                   key={i}
                   onClick={() => setActiveTab(i)}
-                  className="type-body-04"
                   style={{
+                    fontFamily: "var(--theme-font-family-body)",
+                    fontSize: "var(--typography-body-4-sz)",
+                    lineHeight: "var(--typography-body-4-lh)",
+                    fontWeight: 400,
                     background: "none",
                     border: "none",
                     borderBottom:
@@ -207,8 +225,13 @@ export default function M45TabContent({
                   }}
                 >
                   <span
-                    className="type-body-04"
-                    style={{ color: "var(--texts-01)" }}
+                    style={{
+                      fontFamily: "var(--theme-font-family-body)",
+                      fontSize: "var(--typography-body-4-sz)",
+                      lineHeight: "var(--typography-body-4-lh)",
+                      fontWeight: 400,
+                      color: "var(--texts-01)",
+                    }}
                   >
                     {item}
                   </span>
@@ -248,7 +271,6 @@ export default function M45TabContent({
                 <a
                   key={i}
                   href="#"
-                  className="type-cta-01"
                   style={{
                     display: "flex",
                     flexDirection: "row",
@@ -256,6 +278,10 @@ export default function M45TabContent({
                     alignItems: "center",
                     color: "var(--button-link-primary-default-text)",
                     textDecoration: "none",
+                    fontFamily: "var(--theme-font-family-cta)",
+                    fontSize: "var(--typography-cta-1-sz)",
+                    lineHeight: "var(--typography-cta-1-lh)",
+                    fontWeight: 500,
                   }}
                 >
                   <span style={{ fontSize: 18 }}>↓</span>
@@ -290,7 +316,13 @@ export default function M45TabContent({
                 }}
               >
                 <span style={{ fontSize: 18, color: "var(--texts-01)" }}>↻</span>
-                <span className="type-body-03" style={{ color: "var(--texts-01)" }}>
+                <span style={{
+                  fontFamily: "var(--theme-font-family-body)",
+                  fontSize: "var(--typography-body-3-sz)",
+                  lineHeight: "var(--typography-body-3-lh)",
+                  fontWeight: 400,
+                  color: "var(--texts-01)",
+                }}>
                   Placeholder
                 </span>
               </div>
