@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './index.css';
 import '../src/fonts.css';
 import '../src/fonts-haas.css';
@@ -40,12 +41,14 @@ const preview = {
   },
   decorators: [
     (Story, context) => {
-    const theme = context.globals.theme || 'base';
-    const mode = context.globals.mode || 'light-white';
-    document.documentElement.setAttribute('data-theme', theme);
-    document.documentElement.setAttribute('data-mode', mode);
-    return <Story />;
-  },
+      const theme = context.globals.theme || 'base';
+      const mode  = context.globals.mode  || 'light-white';
+      useEffect(() => {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute('data-mode', mode);
+      }, [theme, mode]);
+      return <Story />;
+    },
   ],
   parameters: {
     controls: {
