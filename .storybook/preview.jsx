@@ -6,6 +6,7 @@ import '../src/tokens/theme-bw.css';
 import '../src/tokens/semantic.css';
 import '../src/tokens/responsive.css';
 import '../src/tokens/fixed.css';
+import '../src/tokens/typography.css';
 /** @type { import('@storybook/react-vite').Preview } */
 const preview = {
   globalTypes: {
