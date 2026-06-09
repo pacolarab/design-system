@@ -1,49 +1,51 @@
 .m32 {
   background: var(--backgrounds-01);
-  padding: var(--layout-spacers-12) var(--layout-grids-wrapper-default);
+  padding-top: var(--layout-spacers-12, 72px);
+  padding-bottom: var(--layout-spacers-12, 72px);
+  padding-left: var(--layout-grids-wrapper-default);
+  padding-right: var(--layout-grids-wrapper-default);
+  display: flex;
+  flex-direction: column;
+}
+
+.m32__content {
   display: flex;
   flex-direction: column;
   gap: var(--layout-spacers-11);
-  box-sizing: border-box;
   width: 100%;
 }
 
-/* Header */
 .m32__header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--layout-grids-gutter);
 }
 
-.m32__title {
-  grid-column: 1 / 8;
+.m32__header-left {
+  grid-column: 1 / 7;
   font-family: var(--theme-font-family-title);
   font-size: var(--typography-title-3-sz);
   line-height: var(--typography-title-3-lh);
-  font-weight: 400;
   color: var(--texts-01);
-  margin: 0;
+  font-weight: 400;
 }
 
-.m32__subtitle {
+.m32__header-right {
   grid-column: 8 / 13;
   font-family: var(--theme-font-family-body);
   font-size: var(--typography-body-3-sz);
   line-height: var(--typography-body-3-lh);
-  font-weight: 400;
   color: var(--texts-02);
-  margin: 0;
-  align-self: flex-end;
+  font-weight: 400;
+  align-self: center;
 }
 
-/* Cards grid */
-.m32__grid {
+.m32__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--layout-grids-gutter);
 }
 
-/* Individual card */
 .m32__card {
   background: var(--fills-gray-1);
   border-radius: var(--layout-corners-s);
@@ -52,10 +54,8 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 264px;
-  box-sizing: border-box;
 }
 
-/* Icon container */
 .m32__card-icon {
   background: var(--fills-gray-3);
   border-radius: var(--layout-corners-xs);
@@ -67,7 +67,6 @@
   flex-shrink: 0;
 }
 
-/* Bottom text block */
 .m32__card-bottom {
   display: flex;
   flex-direction: column;
@@ -78,16 +77,14 @@
   font-family: var(--theme-font-family-body);
   font-size: var(--typography-body-4-sz);
   line-height: var(--typography-body-4-lh);
-  font-weight: 500;
   color: var(--texts-01);
-  margin: 0;
+  font-weight: 500;
 }
 
 .m32__card-subtitle {
   font-family: var(--theme-font-family-body);
   font-size: var(--typography-body-3-sz);
   line-height: var(--typography-body-3-lh);
-  font-weight: 400;
   color: var(--texts-02);
-  margin: 0;
+  font-weight: 400;
 }
